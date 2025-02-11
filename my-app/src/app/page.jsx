@@ -1,14 +1,11 @@
 export default function Home() {
   console.log("Hello how are you.....")
-  const handleClick=()=>{
-    console.log("clicking...")
-    alert("Hello")
-  }
+ 
   return (
     <>
     <h1>hello</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus autem eius cupiditate hic, expedita adipisci facilis explicabo, maxime iusto dolores excepturi corporis maiores quibusdam aliquam doloribus nam necessitatibus inventore.</p>    
-    <button className="px-8 py-2 bg-sky-500 rounded-full m-2" onClick={handleClick}>Click me</button>
+    <button className="px-8 py-2 bg-sky-500 rounded-full m-2" >Click me</button>
     </>
   );
 }
