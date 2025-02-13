@@ -1,5 +1,5 @@
 export default function Home() {
-  // console.log("Hello how are you.....")
+  console.log("Hello how are you.....")
  
   return (
     <>
