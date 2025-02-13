@@ -1,12 +1,14 @@
 import React from 'react'
 
-const page = ({params}) => {
+const Product = ({params}) => {
+  // console.log(params.id)
+
   return (
     <div>
-        <h1>Product {params}</h1>
+        <h1>Product { params.id }</h1>
       
     </div>
   )
 }
 
-export default page
+export default Product
