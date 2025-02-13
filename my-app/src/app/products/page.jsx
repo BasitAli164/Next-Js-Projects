@@ -13,6 +13,7 @@ const Header = () => {
         </ul>
 
       </div>
+      
       <div>
         <input type="text" />
         <button className="px-4 py-[2px] rounded-full mx-1 bg-sky-800 ">search</button>
