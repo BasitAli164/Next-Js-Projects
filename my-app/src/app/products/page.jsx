@@ -7,13 +7,6 @@ const Data = () => {
     </div>
   )
 }
-const Work = () => {
-  return (
-    <div>
-      <h1>Hello Work</h1>
 
-    </div>
-  )
-}
 
-export  {Data,Work}
+export default Data
