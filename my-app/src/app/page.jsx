@@ -3,8 +3,8 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div className='h-screen w-screen '>
-      {/* <Hero/> */}
+    <div className='h-screen w-full '>
+      <Hero/>
     </div>
   )
 }

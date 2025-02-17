@@ -4,14 +4,16 @@ import image from 'public/img/img.jpg'
 
 const Hero = () => {
   return (
-    <div className='relative h-screen w-screen'>
+    <div className='relative h-screen w-full'>
       <div className='absolute inset-0 -z-10'>
         <Image
         src={image}
         alt='my-image'
-        
+        fill
         style={{objectFit:'cover'}}
-               
+        
+
+        
         />
       </div>
       <div>
