@@ -1,12 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Performace = () => {
   return (
     <div>
-        <h1>Performace Page</h1>
-      
+      <h1>Performace Page</h1>
     </div>
-  )
-}
+  );
+};
 
-export default Performace
+export default Performace;
