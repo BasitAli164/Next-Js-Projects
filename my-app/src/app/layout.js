@@ -1,6 +1,7 @@
 import { Poppins } from 'next/font/google'
 import "./globals.css";
 import Navbar from '@/components/header';
+import Footer from '@/components/footer';
 
 const poppins = Poppins({
   subsets: ['latin-ext'],
@@ -19,9 +20,9 @@ export default function RootLayout({ children }) {
         <title>Next js with Basit</title>
       </head>
       <body >
-      <Navbar/>
-        
+      <Navbar/>        
         {children}
+      <Footer/>
       </body>
     </html>
   );
