@@ -16,8 +16,8 @@ const Hero = () => {
         
         />
       </div>
-      <div>
-        <h1 className='font-bold text-4xl  text-sky-600'>My Picture is so beautifull</h1>
+      <div className='relative'>
+        <h1 className='font-bold text-3xl  text-gray-800 absolute top-[10rem] left-[10px]' title="Hi! I'm Basit Ali">My Picture is so beautifull</h1>
       </div>
     </div>
   )
