@@ -8,7 +8,8 @@ const Navbar = () => {
           Home
         </Link>
         <div className="flex gap-5">
-          <Link href="/performance">Performance</Link>
+          <Link href="/performance" scroll={true}>Performance</Link>
+          
           <Link href="/reliability">Reliability</Link>
         </div>
       </div>
