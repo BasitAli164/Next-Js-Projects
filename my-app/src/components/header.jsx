@@ -1,11 +1,13 @@
+import Link from "next/link"
+
 const Navbar=()=>{
     return(
         <>
         <div className="flex justify-between ">
-            <h1 className="font-bold">Home</h1>
+            <Link href="/" className="font-bold">Home</Link>
             <div className="flex gap-2">
-                <h1>Performance</h1>
-                <h1>Reliability</h1>
+                <Link href="/performance">Performance</Link>
+                <Link href="/reliability">Reliability</Link>
             </div>
         </div>
         </>
