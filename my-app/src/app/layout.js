@@ -2,8 +2,10 @@ import { Poppins } from 'next/font/google'
 import "./globals.css";
 
 const poppins = Poppins({
-  subsets: ['latin'],
-  weight: '900',
+  subsets: ['latin-ext'],
+  weight: '300',
+  style:"italic",
+  
 
 })
 export default function RootLayout({ children }) {
@@ -16,7 +18,6 @@ export default function RootLayout({ children }) {
         <title>Next js with Basit</title>
       </head>
       <body >{children}
-        <p>loreasdfjksadj kjdfkjdsa kdjsafkj</p>
       </body>
     </html>
   );
