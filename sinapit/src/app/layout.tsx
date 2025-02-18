@@ -10,10 +10,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-       
-      >
+      <body>
+        <div className="container mx-auto p-12">
         {children}
+
+        </div>
       </body>
     </html>
   );
