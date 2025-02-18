@@ -16,7 +16,7 @@ const ReviweSnippet = async ({
 
   if (!snippet) return <h1> There are no snippt</h1>;
   return (
-    <div>
+    <div className="flex flex-col gap-5">
       <div className="flex justify-between">
         <h1 className="text-white text-xl font-semibold">{snippet?.title}</h1>
         <div className="flex gap-5">
@@ -26,7 +26,7 @@ const ReviweSnippet = async ({
           </Button>
         </div>
       </div>
-      <div className="bg-slate-700 mt-3 p-5 rounded-md">
+      <div className="bg-slate-700 p-5 rounded-md">
         <pre>
             <code className="text-white">{snippet.code}</code>
         </pre>
