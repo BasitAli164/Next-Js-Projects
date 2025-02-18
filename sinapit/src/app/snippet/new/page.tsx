@@ -5,17 +5,27 @@ import { Label } from "@radix-ui/react-label";
 import React from "react";
 
 const CreateSnippet = () => {
-  return (
-    <div className="flex  flex-col gap-3">
-      <Label className="font-semibold text-xl">Title:</Label>
-      <Input type="text" name="title" id="title"/>
-      <Label className="font-semibold text-xl">Code:</Label>
+    const createSnippet=async(formData:FormData)=>{
+        "use server" //use server directive
+        const title=formData.get("title");
+        const code=formData.get("code")
+        
 
-      <Textarea name="code" id="code" />
-      <div className="mt-10">
-        <Button size={"lg"}>New</Button>
+    }
+  return (
+    <form action={createSnippet} className="flex  flex-col gap-3">
+      <div>
+        <Label className="font-semibold text-xl text-white">Title:</Label>
+        <Input type="text" name="title" id="title" />
       </div>
-    </div>
+      <div>
+        <Label className="font-semibold text-xl text-white">Code:</Label>
+        <Textarea name="code" id="code" />
+      </div>
+      <div className="mt-5">
+        <Button type="submit" size={"lg"}>New</Button>
+      </div>
+    </form>
   );
 };
 
