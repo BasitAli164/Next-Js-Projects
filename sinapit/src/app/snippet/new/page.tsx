@@ -29,7 +29,7 @@ const CreateSnippet = () => {
       </div>
       <div>
         <Label className="font-semibold text-xl text-white">Code:</Label>
-        <Textarea name="code" id="code" className="text-white" />
+        <Textarea name="code" id="code" className="text-white" rows={10} />
       </div>
       <div className="mt-5">
         <Button type="submit" size={"lg"}>New</Button>
