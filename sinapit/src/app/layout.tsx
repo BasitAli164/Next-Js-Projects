@@ -10,7 +10,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className=" bg-black dark:bg-black dark:text-white">
+      <body className=" dark:bg-black dark:text-white">
         <div className="container mx-auto p-12">
         {children}
 
