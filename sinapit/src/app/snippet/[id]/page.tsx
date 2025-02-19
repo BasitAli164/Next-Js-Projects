@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { prisma } from "@/lib/prisma";
+import Link from "next/link";
 import React from "react";
 
 const ReviweSnippet = async ({
@@ -20,7 +21,10 @@ const ReviweSnippet = async ({
       <div className="flex justify-between">
         <h1 className="text-white text-xl font-semibold">{snippet?.title}</h1>
         <div className="flex gap-5">
-          <Button size={"lg"}>Edit</Button>
+          <Link href={`${id}/edit`}>
+         
+            <Button size={"lg"}>Edit</Button>
+          </Link>
           <Button variant={"destructive"} size={"lg"}>
             Delete
           </Button>
@@ -28,7 +32,7 @@ const ReviweSnippet = async ({
       </div>
       <div className="bg-slate-700 p-5 rounded-md">
         <pre>
-            <code className="text-white">{snippet.code}</code>
+          <code className="text-white">{snippet.code}</code>
         </pre>
       </div>
     </div>
