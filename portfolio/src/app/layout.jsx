@@ -1,15 +1,25 @@
+import {Poppins} from 'next/font/google'
 import "./globals.css";
+import Navbar from '@/components/Navbar';
+
+const poppinsFont=Poppins({  
+ subsets:["latin"],
+ weight:[ "400", "500", "600", "700"]
+ 
+})
+
 
 
 export const metadata = {
   title: "Basit's Portfolio",
-  description: "This Protfolio made in next js framework ",
+  description: "",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${poppinsFont.className} antialiased` }>
+        <Navbar/> 
         {children}
       </body>
     </html>
