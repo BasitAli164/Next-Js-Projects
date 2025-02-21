@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import myImage from "@/assets/img.jpg";
-import { infoList } from "@/assets/assest";
+import { infoList, toolsDataLight } from "@/assets/assest";
 const AboutPage = () => {
   return (
     <div className="w-full px-[12%] py-10 scroll-mt-20 ">
@@ -29,8 +29,15 @@ const AboutPage = () => {
               </li>
             ))}
           </ul>
-          <h4>Tools I use</h4>
-          <ul>
+          <h4 className="my-6 text-gray-700 font-Ovo text-xl">Tools I use</h4>
+          <ul className="flex items-center gap-3 sm:gap-5">
+            {
+              toolsDataLight.map((tool,index)=>(
+                 <li className="flex justify-center items-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500" key={index}>
+                  <Image src={tool} alt="Tool" className="w-5 sm:w-10 "/>
+                 </li>
+              ))
+            }
 
           </ul>
         </div>
