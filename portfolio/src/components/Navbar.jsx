@@ -46,42 +46,38 @@ const Navbar = () => {
             </span>
           </h1>
         </Link>
-        <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-md bg-opacity-25">
+        <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-[linear-gradient(#e0e0e0,#e9e9e9,#fff,#f0f0f0)] shadow-md bg-opacity-25">
           <li>
-            <Link href="/" className="font-Ovo">
+            <Link href="/" className="font-Ovo text-lg">
               Home
             </Link>
           </li>
           <li>
-            <Link href="/about" className="font-Ovo">
-              About me
+            <Link href="/about" className="font-Ovo text-lg">
+              About 
             </Link>
           </li>
           <li>
-            <Link href="/service" className="font-Ovo">
+            <Link href="/service" className="font-Ovo text-lg">
               Services
             </Link>
           </li>
           <li>
-            <Link href="/skill" className="font-Ovo">
-              My Skills
+            <Link href="/skill" className="font-Ovo text-lg">
+               Skills
             </Link>
           </li>
-          <li>
-            <Link href="/contact" className="font-Ovo">
-              Contact me
-            </Link>
-          </li>
+          
         </ul>
 
-        <div className="flex items-center gap-[-3px] md:gap-4">
+        <div className="flex items-center gap-[-3px] md:gap-1">
           <Button variant="icon" className="">
             {moonIcon}
           </Button>
 
           <Link href="/contact">
             {" "}
-            <Button className="rounded-full hidden lg:flex items-center gap-2 px-7 py-5  border border-gray-500 ml-4 text-lg font-Ovo">
+            <Button className="rounded-full hidden md:flex items-center gap-1 px-7 py-5  border border-gray-500 ml-4 text-lg font-Ovo">
               {" "}
               Contact <span className="rotate-[-40deg]">{arrowIcon}</span>
             </Button>
@@ -105,7 +101,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link href="/about" className="font-Ovo" onClick={closeMenu}>
-              About me
+              About 
             </Link>
           </li>
           <li>
@@ -115,12 +111,12 @@ const Navbar = () => {
           </li>
           <li>
             <Link href="/skill" className="font-Ovo" onClick={closeMenu}>
-              My Skills
+               Skills
             </Link>
           </li>
           <li>
             <Link href="/contact" className="font-Ovo" onClick={closeMenu}>
-              Contact me
+              Contact 
             </Link>
           </li>
         </ul>
