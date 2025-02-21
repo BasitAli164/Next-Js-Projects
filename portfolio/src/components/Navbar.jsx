@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import {useRef} from 'react'
+import { Button } from "./ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowRight,
@@ -11,7 +12,6 @@ import {
   
 } from "@fortawesome/free-solid-svg-icons";
 
-import { Button } from "./ui/button";
 const Navbar = () => {
   {
     /* Hooks */
