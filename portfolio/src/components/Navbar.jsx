@@ -67,6 +67,11 @@ const Navbar = () => {
                Skills
             </Link>
           </li>
+          <li>
+            <Link href="/work" className="font-Ovo text-lg">
+               Works
+            </Link>
+          </li>
           
         </ul>
 

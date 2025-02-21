@@ -1,7 +1,7 @@
 import Image from "next/image";
 import profileImage from "../assets/img.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHand, faArrowRight,faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faHand, faArrowRight,faDownload,faPhone } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { Button } from "./ui/button";
 const Header = () => {
@@ -11,6 +11,7 @@ const Header = () => {
   const handIcon = <FontAwesomeIcon icon={faHand} />
   const rightArrowIcon = <FontAwesomeIcon icon={faArrowRight} />
   const downloadIcon=<FontAwesomeIcon icon={faDownload}/>
+  const phoneIcon=<FontAwesomeIcon icon={faPhone}/>
   return (
     <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-2">
       <div>
@@ -33,12 +34,12 @@ const Header = () => {
         </p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <Link href="/contact" >
-          <Button className="px-10 py-6 border rounded-full border-gray-500 bg-black text-white flex items-center gap2 text-lg ">
-            Contact Me <span >{rightArrowIcon}</span>
+          <Button className="px-8 py-6 border rounded-full border-gray-500 bg-black text-white flex items-center gap2 text-lg ">
+            Contact Me <span className="  rotate-[270deg]  animate-pulse" >{phoneIcon}</span>
           </Button>
         </Link>
         <Link href="/sample-resume.pdf" download >
-          <Button className="px-10 py-6 border rounded-full border-gray-500 flex items-center gap2 text-lg">
+          <Button className="px-8 py-6 border rounded-full border-gray-500 flex items-center gap2 text-lg">
             My Resume <span className="animate-bounce">{downloadIcon}</span>
           </Button>
         </Link> 
