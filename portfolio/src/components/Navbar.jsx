@@ -7,8 +7,10 @@ import {
   faMoon,
   faSun,
   faBars,
-  faClose,
+  faClose
+  
 } from "@fortawesome/free-solid-svg-icons";
+
 import { Button } from "./ui/button";
 const Navbar = () => {
   {
