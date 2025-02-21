@@ -12,34 +12,34 @@ const Header = () => {
   const rightArrowIcon = <FontAwesomeIcon icon={faArrowRight} />
   const downloadIcon=<FontAwesomeIcon icon={faDownload}/>
   return (
-    <div>
+    <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-2">
       <div>
         <Image
           src={profileImage}
           alt="Profile-Image"
-          className="rounded-full w-28"
+          className="rounded-full w-20 "
         />
       </div>
       <h3 className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
-        Hi! I'm Basit Ali <li className="block text-red-600 ">{handIcon}</li>
+        Hi! I'm Basit Ali <li className="block text-orange-200 rotate-[-45deg]">{handIcon}</li>
       </h3>
-      <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">
-        Full stack web developer based in Skardu.
-        <p className="max-w-2xl mx-auto font-Ovo text-lg">
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-Ovo ">
+        Full stack web developer based in Skardu.        
+      </h1>
+      <p className="max-w-2xl mx-auto font-Ovo text-center text-lg">
           I am a full stack developer from Skardu, Gilgit Baltistan with 7
           months of experience in mulitple skills like frontend ,backend, and
           database.
         </p>
-      </h1>
-      <div>
+      <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <Link href="/contact" >
-          <Button className="px-10 py-6 border rounded-full border-gray-500 flex items-center gap2">
-            Contact Me <span>{rightArrowIcon}</span>
+          <Button className="px-10 py-6 border rounded-full border-gray-500 bg-black text-white flex items-center gap2 text-lg ">
+            Contact Me <span >{rightArrowIcon}</span>
           </Button>
         </Link>
         <Link href="/sample-resume.pdf" download >
-          <Button className="px-10 py-6 border rounded-full border-gray-500 flex items-center gap2">
-            My Resume <span>{downloadIcon}</span>
+          <Button className="px-10 py-6 border rounded-full border-gray-500 flex items-center gap2 text-lg">
+            My Resume <span className="animate-bounce">{downloadIcon}</span>
           </Button>
         </Link> 
       </div>
