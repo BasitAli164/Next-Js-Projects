@@ -11,7 +11,7 @@ const Navbar = () => {
     <>
       <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
         <Link href="#top">
-          <h1 className="text-4xl font-bold">Basit...</h1>
+          <h1 className="text-4xl  relative"><span className="absolute bottom-5  left-[-25px]">...</span>Basit...</h1>
         </Link>
         <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-md bg-opacity-25">
           <li>
