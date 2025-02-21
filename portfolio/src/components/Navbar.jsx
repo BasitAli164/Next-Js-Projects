@@ -39,7 +39,7 @@ const Navbar = () => {
       <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
         <Link href="#top">
           <h1 className="text-4xl  relative">
-            <span className="absolute bottom-6  left-[-6px] font-bold">.</span>
+            <span className="absolute bottom-6  left-[-6px] font-bold ">.</span>
             Basit{" "}
             <span className="absolute bottom-[3.5px] right-[-6px] font-bold">
               .
