@@ -4,12 +4,10 @@ import darkvsCode from '@/assets/toolImages/vsCode.png';
 import darkgit from '@/assets/toolImages/git.png';
 import darkmongodb from '@/assets/toolImages/mongodb.png';
 import darkpostman from '@/assets/toolImages/postman.png';
-import darkcplusPlus from '@/assets/toolImages/C++.png';
 import darkoffice from '@/assets/toolImages/office.png';
 import darkmySql from '@/assets/toolImages/mySqlServer.png';
 import lightvsCode from '@/assets/toolImages/vslight.png'
 import ligthgit from '@/assets/toolImages/gitlight.png';
-import clight from '@/assets/toolImages/clight.png';
 import lightdb from '@/assets/toolImages/lightdb.png';
 import lightpost from '@/assets/toolImages/lightpost.png'
 
@@ -34,5 +32,5 @@ export const infoList = [
     description: "Built more than 5 projects",
   },
 ];
-export const toolsDataDark=[darkvsCode,darkgit,darkmongodb,darkpostman,darkcplusPlus,darkoffice,darkmySql];
-export const toolsDataLight=[lightvsCode,ligthgit,lightpost,lightdb,darkmySql,darkoffice,clight]
+export const toolsDataDark=[darkvsCode,darkgit,darkmongodb,darkpostman,darkoffice,darkmySql];
+export const toolsDataLight=[lightvsCode,ligthgit,lightpost,lightdb,darkmySql,darkoffice]

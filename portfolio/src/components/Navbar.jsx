@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import {useRef} from 'react'
+import {useEffect, useRef, useState} from 'react'
 import { Button } from "./ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -16,7 +16,19 @@ const Navbar = () => {
   {
     /* Hooks */
   }
+  const [isScroll,setIsScroll]=useState(false)
   const sideMenuRef = useRef();
+  useEffect(()=>{
+    window.addEventListener('scroll',()=>{
+      if(scrollY>50000){
+        setIsScroll(true)
+
+      }else{
+        setIsScroll(false)
+
+      }
+    })
+  },[isScroll])
 
   {
     /* Handlers Function */
@@ -38,17 +50,17 @@ const Navbar = () => {
   const crossIcon = <FontAwesomeIcon icon={faClose} />;
   return (
     <>
-      <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+      <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll?'':'bg-white bg-opacity-50 backdrop-blur-lg shadow-sm'}`}>
         <Link href="/">
           <h1 className="text-4xl  relative">
             <span className="absolute bottom-6  left-[-6px] font-bold ">.</span>
             Basit{" "}
-            <span className="absolute bottom-[3.5px] right-[-6px] font-bold">
+            <span className="absolute bottom-[3.5px] right-[-6px] font-bold text-orange-600">
               .
             </span>
           </h1>
         </Link>
-        <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-[linear-gradient(#e0e0e0,#e9e9e9,#fff,#f0f0f0)] shadow-md bg-opacity-25">
+        <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll?'bg-[linear-gradient(#e0e0e0,#e9e9e9,#fff,#f0f0f0)] shadow-md bg-opacity-25':''}`}>
           <li>
             <Link href="/" className="font-Ovo text-lg">
               Home
@@ -78,13 +90,13 @@ const Navbar = () => {
         </ul>
 
         <div className="flex items-center gap-[-3px] md:gap-1">
-          <Button variant="icon" className="">
+          <Button variant="icon" >
             {moonIcon}
           </Button>
 
           <Link href="/contact">
             {" "}
-            <Button className="rounded-full hidden md:flex items-center gap-1 px-7 py-5  border border-gray-500 ml-4 text-lg font-Ovo">
+            <Button className="rounded-full hidden md:flex items-center gap-1 px-7 py-5  border border-gray-500 ml-4 text-lg font-Ovo shadow-md">
               {" "}
               Contact <span className="rotate-[-40deg]">{arrowIcon}</span>
             </Button>
