@@ -1,7 +1,7 @@
 import Image from "next/image";
 import profileImage from "../assets/img.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHand, faArrowRight,faDownload,faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faHand, faDownload,faPhone } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { Button } from "./ui/button";
 const Header = () => {
@@ -9,7 +9,6 @@ const Header = () => {
     /* -----Icons----- */
   }
   const handIcon = <FontAwesomeIcon icon={faHand} />
-  const rightArrowIcon = <FontAwesomeIcon icon={faArrowRight} />
   const downloadIcon=<FontAwesomeIcon icon={faDownload}/>
   const phoneIcon=<FontAwesomeIcon icon={faPhone}/>
   return (

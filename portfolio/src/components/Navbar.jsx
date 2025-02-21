@@ -55,12 +55,12 @@ const Navbar = () => {
           <h1 className="text-4xl  relative">
             <span className="absolute bottom-6  left-[-6px] font-bold ">.</span>
             Basit{" "}
-            <span className="absolute bottom-[3.5px] right-[-6px] font-bold text-orange-600">
+            <span className="absolute bottom-[3.5px] right-[-6px] font-bold text-orange-200">
               .
             </span>
           </h1>
         </Link>
-        <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll?'bg-[linear-gradient(#e0e0e0,#e9e9e9,#fff,#f0f0f0)] shadow-md bg-opacity-25':''}`}>
+        <ul className={`hidden md:flex items-center gap-8 lg:gap-12 rounded-full px-12 py-3 ${isScroll?'bg-[linear-gradient(#e0e0e0,#e9e9e9,#fff,#f0f0f0)] shadow-2x; bg-opacity-25':''}`}>
           <li>
             <Link href="/" className="font-Ovo text-lg">
               Home
@@ -71,21 +71,13 @@ const Navbar = () => {
               About 
             </Link>
           </li>
-          <li>
-            <Link href="/service" className="font-Ovo text-lg">
-              Services
-            </Link>
-          </li>
+          
           <li>
             <Link href="/skill" className="font-Ovo text-lg">
-               Skills
+               Skill
             </Link>
           </li>
-          <li>
-            <Link href="/work" className="font-Ovo text-lg">
-               Works
-            </Link>
-          </li>
+
           
         </ul>
 
