@@ -7,7 +7,7 @@ const SkillPage = () => {
     <div className='full px-[12%] py-10 scroll-mt-10'>
       <h2 className='text-center text-5xl font-Ovo'>My Skill</h2>
       <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-lg'>I am a full stack developer with the experties in these skill or stack which are the top demanded skills in industry with 7 month experience </p>
-      <div className='grid grid-cols-5 gap-8 my-10 items-center justify-center'>
+      <div className='flex flex-wrap flex-col sm:flex-row gap-4 sm:gap-7 lg:gap-10  xl:gap-10 my-10 items-center justify-center'>
         {
           mySkills.map(({icon,title,description},index)=>(
             <div key={index} className='border border-gray-400 rounded-lg flex flex-col justify-center items-center w-48 h-56 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 transition duration-500'>
