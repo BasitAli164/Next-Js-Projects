@@ -1,3 +1,6 @@
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import React from "react";
 
 const ContactPage = () => {
@@ -11,6 +14,14 @@ const ContactPage = () => {
         I'd love to hear from you! If you have any questions, comments, or
         feedback, please use the form below.{" "}
       </p>
+      <form className="max-w-2xl mx-auto">
+        <div className="flex gap-6 mt-10 mb-8">
+          <Input type="text" placeholder="Enter your name" required className=" p-6 outline-none border-[0.5px] border-gray-400 rounded-md bg-white text-lg placeholder:text-lg font-Ovo"/>
+          <Input type="email" placeholder="Enter your email" required className=" p-6 outline-none border-[0.5px] border-gray-400 rounded-md bg-white text-lg placeholder:text-lg font-Ovo"/>
+        </div>
+        <Textarea rows='6' placeholder="Enter your message..." required className=" p-6 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 text-lg placeholder:text-lg font-Ovo"/>  
+        <Button type="submit" className="py-6 px-10 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black transition duration-500 text-lg">Submit now</Button>
+      </form>
     </div>
   );
 };
