@@ -22,8 +22,8 @@ const Footer = () => {
       <div className="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
         <p> &copy; 2025 Basit Ali . All rights reserved.</p>
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
-          <li><Link href='https://github.com/BasitAli164' target="_blank">GitHub</Link></li>
-          <li><Link href='https://linkedIn.com/BasitAli164' target="_blank">LinkedIn</Link></li>
+          <li><Link href='https://github.com/BasitAli164/' target="_blank">GitHub</Link></li>
+          <li><Link href='https://www.linkedin.com/in/basit-ali-abdupa/' target="_blank">LinkedIn</Link></li>
         </ul>
       </div>
     </div>
