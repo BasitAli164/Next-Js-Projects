@@ -1,36 +1,33 @@
-import img from '@/assets/img.jpg'
-import pic from '@/assets/pic.jpeg'
-import darkvsCode from '@/assets/toolImages/vsCode.png';
-import darkgit from '@/assets/toolImages/git.png';
-import darkmongodb from '@/assets/toolImages/mongodb.png';
-import darkpostman from '@/assets/toolImages/postman.png';
-import darkoffice from '@/assets/toolImages/office.png';
-import darkmySql from '@/assets/toolImages/mySqlServer.png';
-import lightvsCode from '@/assets/toolImages/vslight.png'
-import ligthgit from '@/assets/toolImages/gitlight.png';
-import lightdb from '@/assets/toolImages/lightdb.png';
-import lightpost from '@/assets/toolImages/lightpost.png'
+import codeIcon from '@/assets/iconImage/code-icon.png';
+import codeIconDark from '@/assets/iconImage/code-icon-dark.png';
+import educIcon from '@/assets/iconImage/edu-icon.png';
+import educIconDark from '@/assets/iconImage/edu-icon-dark.png';
+import projectIcon from '@/assets/iconImage/project-icon.png';
+import projectIconDark from '@/assets/iconImage/project-icon-dark.png';
+import gitIcon from '@/assets/toolImages/git.png';
+import vscodeIcon from '@/assets/toolImages/vscode.png';
+import mongodb from '@/assets/toolImages/mongodb.png';
+import postman from '@/assets/toolImages/postman.png'
 
 
 export const infoList = [
   {
-    icon: pic,
-    iconDark: img,
+    icon: codeIcon,
+    iconDark: codeIconDark,
     title: "Language",
     description: "Balti, Urdu, English",
   },
   {
-    icon: pic,
-    iconDark: img,
+    icon: educIcon,
+    iconDark: educIconDark,
     title: "Education",
     description: "BS in Computer Science",
   },
   {
-    icon: pic,
-    iconDark: img,
+    icon: projectIcon,
+    iconDark: projectIconDark,
     title: "Projects",
     description: "Built more than 5 projects",
   },
 ];
-export const toolsDataDark=[darkvsCode,darkgit,darkmongodb,darkpostman,darkoffice,darkmySql];
-export const toolsDataLight=[lightvsCode,ligthgit,lightpost,lightdb,darkmySql,darkoffice]
+export const toolsDataLight=[vscodeIcon,gitIcon,mongodb,postman]

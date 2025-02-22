@@ -51,8 +51,8 @@ const Navbar = () => {
   return (
     <>
       <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll?'':'bg-white bg-opacity-50 backdrop-blur-lg shadow-sm'}`}>
-        <Link href="/">
-          <h1 className="w-36 mx-auto mb-2  relative">
+      <Link href="/">
+          <h1 className="text-4xl  relative">
             <span className="absolute bottom-6  left-[-6px] font-bold ">.</span>
             Basit{" "}
             <span className="absolute bottom-[3.5px] right-[-6px] font-bold text-orange-200">
