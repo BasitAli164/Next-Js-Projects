@@ -1,12 +1,32 @@
-'use client'
+"use client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 const ContactPage = () => {
   const rightArrowIcon = <FontAwesomeIcon icon={faArrowRight} />;
-  
+  const [result, setResult] = useState("");
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+    formData.append("access_key", "");
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data=await response.json();
+    if(data.success){
+      setResult("Form Submitted Successfully")
+      event.target.reset();
+    }else{
+      console.log("Error",data);
+      setResult(data.message)
+    }
+  };
 
   return (
     <div
@@ -18,17 +38,19 @@ const ContactPage = () => {
         I'd love to hear from you! If you have any questions, comments, or
         feedback, please use the form below.{" "}
       </p>
-      <form className="max-w-2xl mx-auto">
+      <form onSubmit={handleSubmit} className="max-w-2xl mx-auto">
         <div className="flex gap-6 mt-10 mb-8">
           <Input
             type="text"
             placeholder="Enter your name"
+            name="name"
             required
             className=" p-6 outline-none border-[0.5px] border-gray-400 rounded-md bg-white text-lg placeholder:text-lg font-Ovo"
           />
           <Input
             type="email"
             placeholder="Enter your email"
+            name="email"
             required
             className=" p-6 outline-none border-[0.5px] border-gray-400 rounded-md bg-white text-lg placeholder:text-lg font-Ovo"
           />
@@ -36,6 +58,7 @@ const ContactPage = () => {
         <Textarea
           rows="6"
           placeholder="Enter your message..."
+          name="message"
           required
           className=" p-6 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 text-lg placeholder:text-lg font-Ovo"
         />
@@ -46,7 +69,7 @@ const ContactPage = () => {
           Submit now
           <span className="text-white ">{rightArrowIcon}</span>
         </Button>
-        <p className="text-lg mt-5">Sending....</p>
+        <p className="text-lg mt-5">{result}</p>
       </form>
     </div>
   );
