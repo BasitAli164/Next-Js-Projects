@@ -4,7 +4,8 @@ import React, { useEffect, useState } from 'react'
 import AboutPage from './about/page'
 import SkillPage from './skill/page'
 import ContactPage from './contact/page'
-import { faL } from '@fortawesome/free-solid-svg-icons'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 
 const Home = () => {
@@ -30,10 +31,12 @@ const Home = () => {
   },[isDarkMood])
   return (
     <div>
-      <Header/>
-      <AboutPage/>
-      <SkillPage/>
-      <ContactPage/>
+      <Navbar isDarkMood={isDarkMood} setIsDarkMood={setIsDarkMood}/>
+      <Header isDarkMood={isDarkMood}/>
+      <AboutPage isDarkMood={isDarkMood}/>
+      <SkillPage isDarkMood={isDarkMood}/>
+      <ContactPage isDarkMood={isDarkMood}/>
+      <Footer isDarkMood={isDarkMood}/>
     </div>
   )
 }
