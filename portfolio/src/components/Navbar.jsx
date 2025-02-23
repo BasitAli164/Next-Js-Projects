@@ -1,34 +1,29 @@
 "use client";
 import Link from "next/link";
-import {useEffect, useRef, useState} from 'react'
+import { useEffect, useRef, useState } from "react";
 import { Button } from "./ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowRight,
-  faMoon,
-  faSun,
   faBars,
-  faClose
-  
+  faClose,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   {
     /* Hooks */
   }
-  const [isScroll,setIsScroll]=useState(false)
+  const [isScroll, setIsScroll] = useState(false);
   const sideMenuRef = useRef();
-  useEffect(()=>{
-    window.addEventListener('scroll',()=>{
-      if(scrollY>50000){
-        setIsScroll(true)
-
-      }else{
-        setIsScroll(false)
-
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (scrollY > 50000) {
+        setIsScroll(true);
+      } else {
+        setIsScroll(false);
       }
-    })
-  },[isScroll])
+    });
+  }, [isScroll]);
 
   {
     /* Handlers Function */
@@ -44,14 +39,16 @@ const Navbar = () => {
     /* Icons */
   }
   const arrowIcon = <FontAwesomeIcon icon={faArrowRight} />;
-  const moonIcon = <FontAwesomeIcon icon={faMoon} />;
-  const sunIcon = <FontAwesomeIcon icon={faSun} />;
   const barIcon = <FontAwesomeIcon icon={faBars} />;
   const crossIcon = <FontAwesomeIcon icon={faClose} />;
   return (
     <>
-      <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll?'':'bg-white bg-opacity-50 backdrop-blur-lg shadow-sm'}`}>
-      <Link href="/">
+      <nav
+        className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${
+          isScroll ? "" : "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm"
+        }`}
+      >
+        <Link href="/">
           <h1 className="text-4xl  relative">
             <span className="absolute bottom-6  left-[-6px] font-bold ">.</span>
             Basit{" "}
@@ -60,7 +57,13 @@ const Navbar = () => {
             </span>
           </h1>
         </Link>
-        <ul className={`hidden md:flex items-center gap-8 lg:gap-12 rounded-full px-12 py-3 ${isScroll?'bg-[linear-gradient(#e0e0e0,#e9e9e9,#fff,#f0f0f0)] shadow-2x; bg-opacity-25':''}`}>
+        <ul
+          className={`hidden md:flex items-center gap-8 lg:gap-12 rounded-full px-12 py-3 ${
+            isScroll
+              ? "bg-[linear-gradient(#e0e0e0,#e9e9e9,#fff,#f0f0f0)] shadow-2x; bg-opacity-25"
+              : ""
+          }`}
+        >
           <li>
             <Link href="/" className="font-Ovo text-lg">
               Home
@@ -68,24 +71,18 @@ const Navbar = () => {
           </li>
           <li>
             <Link href="/about" className="font-Ovo text-lg">
-              About 
-            </Link>
-          </li>
-          
-          <li>
-            <Link href="/skill" className="font-Ovo text-lg">
-               Skill
+              About
             </Link>
           </li>
 
-          
+          <li>
+            <Link href="/skill" className="font-Ovo text-lg">
+              Skill
+            </Link>
+          </li>
         </ul>
 
         <div className="flex items-center gap-[-3px] md:gap-1">
-          <Button variant="icon" >
-            {moonIcon}
-          </Button>
-
           <Link href="/contact">
             {" "}
             <Button className="rounded-full hidden md:flex items-center gap-1 px-7 py-5  border border-gray-500 ml-4 text-lg font-Ovo shadow-md">
@@ -94,7 +91,7 @@ const Navbar = () => {
             </Button>
           </Link>
           <Button variant="icon" onClick={openMenu}>
-            <li className="block md:hidden ml-3" >{barIcon}</li>
+            <li className="block md:hidden ml-3">{barIcon}</li>
           </Button>
         </div>
         {/* ------------ Mobile Menu ------------*/}
@@ -112,16 +109,15 @@ const Navbar = () => {
           </li>
           <li>
             <Link href="/about" className="font-Ovo" onClick={closeMenu}>
-              About 
+              About
             </Link>
           </li>
-          
+
           <li>
             <Link href="/skill" className="font-Ovo" onClick={closeMenu}>
-               Skill
+              Skill
             </Link>
           </li>
-         
         </ul>
       </nav>
     </>

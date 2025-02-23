@@ -2,13 +2,9 @@
 import Image from "next/image";
 import myImage from "@/assets/img.jpg";
 import { infoList, toolsDataLight } from "@/assets/assest";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 const AboutPage = () => {
   return (
-    <>
-    <Navbar/>
-     <div className="w-full px-[12%] py-10 scroll-mt-20 ">
+    <div className="w-full px-[12%] py-10 scroll-mt-20 ">
       <h2 className="text-center text-5xl font-Ovo mt-[70px]">About Me</h2>
       <div className="flex  w-full flex-col lg:flex-row items-center gap-20 my-20">
         <div className="w-64 sm:w-80 rounded-3xl max-w-none hover:shadow-2xl duration-500">
@@ -47,9 +43,6 @@ const AboutPage = () => {
         </div>
       </div>
     </div>
-    <Footer/>
-    </>
-   
   );
 };
 

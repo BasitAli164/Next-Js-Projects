@@ -1,13 +1,9 @@
 import { mySkills } from '@/assets/assest'
-import Footer from '@/components/Footer'
-import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 import React from 'react'
 
 const SkillPage = () => {
   return (
-  <>
-  <Navbar/>
     <div className='full px-[12%] py-10 scroll-mt-10'>
       <h2 className='text-center text-5xl font-Ovo mt-20'>My Skill</h2>
       <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-lg'>I am a full stack developer with the experties in these skill or stack which are the top demanded skills in industry with 7 month experience </p>
@@ -26,8 +22,6 @@ const SkillPage = () => {
       </div>
       
     </div>
-    <Footer/>
-  </>
   )
 }
 
