@@ -24,7 +24,7 @@ export const infoList = [
     icon: educIcon,
     iconDark: educIconDark,
     title: "Education",
-    description: "BS in Computer Science",
+    description: "BS in Computer Science(cont...)",
   },
   {
     icon: projectIcon,
