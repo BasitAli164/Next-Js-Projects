@@ -7,6 +7,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const ContactPage = () => {
   const rightArrowIcon = <FontAwesomeIcon icon={faArrowRight} />;
   
+
   return (
     <div
       className='full px-[12%] py-10 scroll-mt-10 bg-[url("/bgimage.png")] bg-no-repeat bg-center
