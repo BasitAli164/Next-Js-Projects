@@ -1,10 +1,25 @@
+'use client'
 import Header from '@/components/Header'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import AboutPage from './about/page'
 import SkillPage from './skill/page'
 import ContactPage from './contact/page'
 
+
 const Home = () => {
+  const [isDarkMood,setIsDarkMood]=useState(true);
+  useEffect(()=>{
+    
+  },[])
+  useEffect(()=>{
+    if(isDarkMood){
+      document.documentElement.classList.add('dark');
+      localStorage.theme='dark';
+    }else{
+      document.documentElement.classList.remove('dark');
+      localStorage.theme='';
+    }
+  },[isDarkMood])
   return (
     <div>
       <Header/>
