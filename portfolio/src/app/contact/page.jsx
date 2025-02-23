@@ -56,7 +56,7 @@ const ContactPage = () => {
           />
         </div>
         <Textarea
-          rows="6"
+          rows="4"
           placeholder="Enter your message..."
           name="message"
           required

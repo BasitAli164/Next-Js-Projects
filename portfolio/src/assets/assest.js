@@ -45,7 +45,7 @@ export const mySkills = [
   {
     icon:uiTech,
     title: "UI Technology",
-    description: "Tailwind CSS, SCSS, Bootstrap, Shadcn, Mui, and Mantine(exploring)",
+    description: "Tailwind CSS, SCSS, Bootstrap, Shadcn, Mui,  Mantine(exploring), and Framer Motion(exp..)",
    
   },
   {

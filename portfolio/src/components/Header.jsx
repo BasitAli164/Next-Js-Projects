@@ -12,8 +12,8 @@ const Header = () => {
   const downloadIcon=<FontAwesomeIcon icon={faDownload}/>
   const phoneIcon=<FontAwesomeIcon icon={faPhone}/>
   return (
-    <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-2">
-      <div>
+    <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-2 mb-48 md:mb-[70px] lg:mb-0 ">
+      <div className="mt-44 sm:mt-20">
         <Image
           src={profileImage}
           alt="Profile-Image"
