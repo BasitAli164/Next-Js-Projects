@@ -1,7 +1,10 @@
+'use client'
 import {Ovo,Outfit} from 'next/font/google'
 import "./globals.css";
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { useState } from 'react';
+import { faL } from '@fortawesome/free-solid-svg-icons';
 
 const outfit=Outfit({  
  subsets:["latin"],
@@ -15,15 +18,16 @@ const ovo=Ovo({
 
 
 
-export const metadata = {
-  title: "Basit's Portfolio",
-  description: "",
-};
+// export const metadata = {
+//   title: "Basit's Portfolio",
+//   description: "",
+// };
 
 export default function RootLayout({ children }) {
+  const [isDarkMood,setIsDarkMood]=useState(true);
   return (
-    <html lang="en">
-      <body className={`${outfit.className} ${ovo.className} antialiased leading-6 overflow-x-hidden scroll-smooth` }>
+    <html lang="en" className=' '>
+      <body className={`${outfit.className} ${ovo.className} antialiased leading-6 overflow-x-hidden scroll-smooth dark:bg-darkTheme dark:text-white` }>
         <Navbar/> 
         {children}
         <Footer/>
