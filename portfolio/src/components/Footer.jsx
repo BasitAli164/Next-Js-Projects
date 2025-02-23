@@ -3,7 +3,7 @@ import Link from "next/link";
 import mailIcon from '@/assets/iconImage/mail_icon.png'
 const Footer = () => {
   return (
-    <div className='mt-10'>
+    <div className='mt-20'>
       <div className="text-center">
       <Link href="/">
           <h1 className="text-4xl  relative">
