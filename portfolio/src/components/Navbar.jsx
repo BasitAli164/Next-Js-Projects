@@ -55,8 +55,8 @@ const Navbar = () => {
           <h1 className="text-4xl  relative">
             <span className="absolute bottom-6  left-[-6px] font-bold ">.</span>
             Basit{" "}
-            <span className="absolute bottom-[3.5px] right-[-6px] font-bold text-orange-200">
-              .
+            <span className="absolute bottom-[1px] right-[-28px] font-bold ">
+              ...
             </span>
           </h1>
         </Link>
