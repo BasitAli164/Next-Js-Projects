@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import myImage from "@/assets/img.jpg";
 import { infoList, toolsDataLight } from "@/assets/assest";
