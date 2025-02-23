@@ -33,13 +33,13 @@ const ContactPage = () => {
       className='full px-[12%] py-10 scroll-mt-10 bg-[url("/bgimage.png")] bg-no-repeat bg-center
     bg-[length:90%_auto]'
     >
-      <h2 className="text-center text-5xl font-Ovo mt-28">Get in Touch</h2>
+      <h2 className="text-center text-5xl font-Ovo mt-20">Get in Touch</h2>
       <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-lg">
         I'd love to hear from you! If you have any questions, comments, or
         feedback, please use the form below.{" "}
       </p>
       <form onSubmit={handleSubmit} className="max-w-2xl mx-auto">
-        <div className="flex gap-6 mt-10 mb-8">
+        <div className="flex flex-col sm:flex-row gap-6 mt-10 mb-8">
           <Input
             type="text"
             placeholder="Enter your name"

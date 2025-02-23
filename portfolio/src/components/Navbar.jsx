@@ -115,21 +115,13 @@ const Navbar = () => {
               About 
             </Link>
           </li>
-          <li>
-            <Link href="/service" className="font-Ovo" onClick={closeMenu}>
-              Services
-            </Link>
-          </li>
+          
           <li>
             <Link href="/skill" className="font-Ovo" onClick={closeMenu}>
-               Skills
+               Skill
             </Link>
           </li>
-          <li>
-            <Link href="/contact" className="font-Ovo" onClick={closeMenu}>
-              Contact 
-            </Link>
-          </li>
+         
         </ul>
       </nav>
     </>
