@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHand, faDownload,faPhone } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { Button } from "./ui/button";
-import {motion} from 'motion/react'
 const Header = () => {
   {
     /* -----Icons----- */
