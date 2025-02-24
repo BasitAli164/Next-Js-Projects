@@ -36,7 +36,7 @@ const Header = () => {
             Contact Me <span className="  rotate-[270deg]  animate-pulse" >{phoneIcon}</span>
           </Button>
         </Link>
-        <a href="/resume.pdf" download >
+        <a href="/myResume.pdf" download >
           <Button className="px-8 py-6 border rounded-full border-gray-500 flex items-center gap2 text-lg">
             My Resume <span className="animate-bounce">{downloadIcon}</span>
           </Button>
