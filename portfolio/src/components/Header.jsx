@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHand, faDownload,faPhone } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import {motion} from 'motion/react'
 const Header = () => {
   {
     /* -----Icons----- */
@@ -36,7 +37,7 @@ const Header = () => {
             Contact Me <span className="  rotate-[270deg]  animate-pulse" >{phoneIcon}</span>
           </Button>
         </Link>
-        <a href="/myResume.pdf" download >
+        <a href="/BasitResume.pdf" download >
           <Button className="px-8 py-6 border rounded-full border-gray-500 flex items-center gap2 text-lg">
             My Resume <span className="animate-bounce">{downloadIcon}</span>
           </Button>
