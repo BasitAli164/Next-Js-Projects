@@ -19,7 +19,8 @@ export const metadata = {
   title:{
     template:"%s | Personal Portfolio",
     default:"Personal Portfolio"
-  }
+  },
+  description:""
 };
 
 export default function RootLayout({ children }) {

@@ -3,7 +3,7 @@ import myImage from "@/assets/img.jpg";
 import { infoList, toolsDataLight } from "@/assets/assest";
 
 export const metadata={
-  title:"About || Personal Portfolio"
+  title:"About"
 }
 
 
