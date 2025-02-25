@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> c457fd1999951e11683270d3ab4289f9b32c7baa
 👋 Hi, I’m Basit Ali
 
 👀 I’m interested in coding, especially in web development, and exploring new things in the tech field.
@@ -13,8 +10,3 @@
 
 😄 Pronouns: He/Him
 
-<<<<<<< HEAD
-⚡ Fun fact: I enjoy experimenting with new frameworks,libraries and new data base.
-=======
-
->>>>>>> c457fd1999951e11683270d3ab4289f9b32c7baa
