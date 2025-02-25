@@ -1,7 +1,7 @@
 import React from 'react'
 export const metadata={
-    title:"Contact || Personal Portfolio"
-  }
+  title:"Contact || Personal Portfolio"
+}
 const ContactLayout = ({children}) => {
   return (
     <div>

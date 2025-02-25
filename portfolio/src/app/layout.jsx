@@ -16,8 +16,10 @@ const ovo=Ovo({
 
 
 export const metadata = {
-  title: "Basit's Portfolio",
-  description: "",
+  title:{
+    template:"%s | Personal Portfolio",
+    default:"Personal Portfolio"
+  }
 };
 
 export default function RootLayout({ children }) {

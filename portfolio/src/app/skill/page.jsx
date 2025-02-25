@@ -1,9 +1,8 @@
 import { mySkills } from '@/assets/assest'
 import Image from 'next/image'
-import React from 'react'
 
 export const metadata={
-  title:"Skill || Personal Portfolio"
+  title:"Skill"
 }
 
 const SkillPage = () => {
