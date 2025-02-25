@@ -2,6 +2,10 @@ import { mySkills } from '@/assets/assest'
 import Image from 'next/image'
 import React from 'react'
 
+export const metadata={
+  title:"Skill || Personal Portfolio"
+}
+
 const SkillPage = () => {
   return (
     <div className='full px-[12%] py-10 scroll-mt-10 lg:-mb-10'>

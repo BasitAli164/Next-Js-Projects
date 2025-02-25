@@ -64,3 +64,6 @@ export const mySkills = [
     description: "Next js ",
   },
 ];
+export const metadata={
+  title:"Contact || Personal Portfolio"
+}

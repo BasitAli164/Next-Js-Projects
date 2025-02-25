@@ -1,6 +1,12 @@
 import Image from "next/image";
 import myImage from "@/assets/img.jpg";
 import { infoList, toolsDataLight } from "@/assets/assest";
+
+export const metadata={
+  title:"About || Personal Portfolio"
+}
+
+
 const AboutPage = () => {
   return (
     <div className="w-full px-[12%] py-10 scroll-mt-20  lg:-mb-16">

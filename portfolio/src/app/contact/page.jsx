@@ -5,6 +5,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+
+
 const ContactPage = () => {
   const rightArrowIcon = <FontAwesomeIcon icon={faArrowRight} />;
   const [result, setResult] = useState("");
