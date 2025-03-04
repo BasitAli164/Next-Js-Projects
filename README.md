@@ -6,7 +6,7 @@
 
 💼 Currently, I am an intern at NetBots, working on a dashboard project while also exploring UI design, TypeScript, and advanced Tailwind CSS to improve my frontend development skills.
 
-💞️ My tech stack includes React, Next.js, Tailwind CSS, TypeScript, Node.js, Express.js, MongoDB, and SQLite (Prisma). I'm always working on new projects to strengthen my problem-solving and design skills.
+💞️ My tech stack includes HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwind, Node.js, Express.js, MongoDB, and SQLite (Prisma). I'm always working on new projects to strengthen my problem-solving and design skills.
 
 📫 How to reach me:
 
