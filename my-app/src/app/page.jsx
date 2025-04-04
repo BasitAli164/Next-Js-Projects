@@ -1,10 +1,9 @@
-import Template from '@/component/basicTemplate'
 import React from 'react'
 
 const Page = () => {
   return (
     <div>
-      <Template/>
+      <h1>Again start next js</h1>
     </div>
   )
 }
