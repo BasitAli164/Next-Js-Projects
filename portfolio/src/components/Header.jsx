@@ -27,8 +27,8 @@ const Header = () => {
         Full stack web developer based in Skardu.        
       </h1>
       <p className="max-w-2xl mx-auto font-Ovo text-center text-lg">
-          I am a full stack developer from Skardu, Gilgit Baltistan with 7
-          months of experience in mulitple skills like frontend , backend, and database.
+          I am a full stack developer from Skardu, Gilgit Baltistan with 1
+          year of experience in mulitple skills like frontend , backend, and database.
         </p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <Link href="/contact" >
