@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Blogs = () => {
+const Blogs = (props) => {
+  console.log("Props is: ",props)
     
   return (
     <div>
