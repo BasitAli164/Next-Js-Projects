@@ -1,13 +1,14 @@
-import Hero from '@/components/hero'
 import Link from 'next/link'
 import React from 'react'
 
 const Home = () => {
   return (
-    <div className='h-screen w-full flex justify-center items-center'>
+    <div className='h-screen w-full'>
       <h1>Technical Agency...</h1>
-      <Link href={'/blog'}>Blog</Link>
+      <div>
+        <Link href={'/blog'}>Blog</Link><br />
       <Link href={'/about'}>About</Link>
+      </div>
  
     </div>
   )
