@@ -18,6 +18,7 @@ const Home = () => {
         <button onClick={handleFunc} className='px-8 py-2 ml-4 rounded-full bg-gray-100 text-black'>Click Me</button>
       {/* 2nd  Method of routing*/}
       <Link href={'/product'} className='px-8 py-2 rounded-full bg-red-400'>Product page</Link>
+      <Link href={'/services'} className='px-8 py-2 rounded-full bg-orange-300'>Service page</Link>
       </div>
     </div>
   )
