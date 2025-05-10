@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
 
-const BlogPage = () => {
+const BlogPage = (props:object) => {
+    console.log("Props is:",props)
   return (
     <div className='w-[600px] h-[200px] flex flex-col justify-center items-center bg-violet-200'>
         <h1 className='font-bold text-5xl text-black'>Technical Agency....</h1>
