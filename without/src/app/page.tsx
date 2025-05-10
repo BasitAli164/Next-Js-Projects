@@ -19,6 +19,7 @@ const Home = () => {
       {/* 2nd  Method of routing*/}
       <Link href={'/product'} className='px-8 py-2 rounded-full bg-red-400'>Product page</Link>
       <Link href={'/services'} className='px-8 py-2 rounded-full bg-orange-300'>Service page</Link>
+      <Link href={'/blogs'} className='px-8 py-2 rounded-full bg-blue-400'>Blogs page</Link>
       </div>
     </div>
   )
