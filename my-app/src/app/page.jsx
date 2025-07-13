@@ -1,8 +1,11 @@
-import Link from "next/link";
-import React from "react";
+import React from 'react'
 
-const Home = () => {
-  return <></>;
-};
+const Page = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+}
 
-export default Home;
+export default Page
